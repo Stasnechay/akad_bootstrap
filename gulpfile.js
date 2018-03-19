@@ -23,10 +23,10 @@ var paths= {
 		images: "src/img/**/*.*"
 	},
 	dest: {
-		css: "dest/css/",
-		html: "dest/",
-		images: "dest/img/",
-		js: "dest/js/"
+		css: "docs/css/",
+		html: "docs/",
+		images: "docs/img/",
+		js: "docs/js/"
 	},
 	watch: {
 		css: "src/css/**/*.scss",
@@ -126,7 +126,7 @@ gulp.task('watch', function() {
 gulp.task('refresh', function(){
 	browserSync({
 		server: {
-			baseDir: './dest'
+			baseDir: './docs'
 		},
 		injectChanges: true
 	});
