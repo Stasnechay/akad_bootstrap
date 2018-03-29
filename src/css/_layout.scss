@@ -1,0 +1,37 @@
+.section {
+	padding-top: 40px;
+
+	@include _media(lg) {
+		padding-top: 150px;
+	}
+}
+.section-wrapper {
+	@include make-row();
+	
+}
+.section-title-wrapper {
+	 @include make-col-ready();
+		 @include make-col(10);
+		 @include make-col-offset(1);
+		 text-align: center;
+
+		 @include media-breakpoint-up(lg) {
+		 	 @include make-col(8);
+		 	 @include make-col-offset(2);
+		 }
+}
+
+.breadcrumb {
+	text-transform: uppercase;
+	justify-content: center;
+	background-color: transparent;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+
+	a {
+		color: $color_main;
+
+	}
+}
+

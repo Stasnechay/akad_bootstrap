@@ -1,0 +1,44 @@
+.header-main {
+	
+	
+
+	&__wrapper {
+		@include make-container();
+		@include make-container-max-widths();
+	}
+	&--common {
+		background:url(../img/bg-common.jpg);
+		background-size: cover;
+
+	}
+}
+.header-top {
+	@include make-row();
+
+	&__left {
+		 @include make-col-ready();
+		 @include make-col(6);
+	}
+	&__right {
+		 @include make-col-ready();
+		 @include make-col(6);
+	}
+}
+.header-common {
+	min-height: 500px;
+	@include make-row();
+	align-items: center;
+	
+	&__wrapper {
+		 @include make-col-ready();
+		 @include make-col(12);
+		 text-align: center;
+	}
+
+	&__title {
+		font-size: 36px;
+		line-height: 48px;
+		text-transform: uppercase;
+
+	}
+}

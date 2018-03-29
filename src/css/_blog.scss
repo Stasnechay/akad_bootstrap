@@ -1,0 +1,241 @@
+.section-blog {
+	@include make-container();
+	@include make-container-max-widths();
+	
+	&__leftcol {
+
+		@include make-col-ready();
+		  @include media-breakpoint-up(md) {
+        @include make-col(8);
+    }
+	}
+
+	&__rightcol {
+		@include make-col-ready();
+		display: none;
+		// @include make-col-offset(1);
+		  @include media-breakpoint-up(md) {
+        @include make-col-offset(1);
+         @include make-col(3);
+         display: block;
+
+
+        input {
+        	width: 100%;
+        	background-color: #ececec;
+        	border: none;
+        	padding-left: 15px;
+        	padding-right: 15px;
+        	position: relative;
+			font-weight: 700;
+			font-family: 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			line-height: 48px;
+			margin-bottom: 30px;
+        	
+        }
+    }
+	}
+	&__posts {
+
+
+		h4 {
+			font-weight: 700;
+			font-family: 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			font-size: 14px;
+			line-height: 48px;
+		}
+
+		&-nav {
+			// text-align: right;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			border-bottom: 2px solid #e6e6e6;
+			font-weight: 700;
+			font-family: 'Montserrat', sans-serif;
+			text-transform: uppercase;
+			font-size: 14px;
+			height: 48px;
+			text-align: center;
+			margin-bottom: 30px;
+
+			a {
+				display: block;
+				height: 48px;
+				padding: 0 5px;
+				color: #999999;
+
+				&:hover {
+					color: $color_main;
+				border-bottom: 2px solid $color_high;
+				
+				}
+
+			}
+			
+
+			
+			.post-active {
+				color: $color_main;
+				border-bottom: 2px solid $color_high;
+				width: 100%;
+				
+				
+			}
+		}
+	}
+
+
+		
+	&__title {
+		font-size: 18px;
+		line-height: 48px;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+	}
+	&__text {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		color: #999999;
+	}
+
+	&__more {
+		text-transform: uppercase;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 24px;
+		color: $color_main;
+
+		&:after {
+			content: '>';
+			padding-left: 8px;
+		}
+		&:hover {
+			text-decoration: none;
+			color: $color_main;
+		}
+	}
+
+	&__item{
+
+
+		padding-bottom: 100px;
+
+
+		img {
+			min-width: 100%;
+			padding-bottom: 30px;
+		}
+	}
+	&__articles {
+		
+		
+		padding-top: 30px;
+		padding-bottom: 45px;
+		
+		h5 {
+
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		&:after {
+			content: '3th oct 2012';
+			display: block;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 400;
+			color: #9a9a9a;
+		}
+		}
+
+
+		img {
+			max-width: 82px;
+			height: 82px;
+			margin-right: 15px;
+
+		}
+
+		&-wrapper {
+			display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		}
+	}
+	&__categories {
+		
+		margin-bottom: 40px;
+		h4 {
+
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 48px;
+		color: $color_main;
+		}
+
+		&-item {
+
+			padding: 0 15px;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #bfbfbf;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 14px;
+			line-height: 18px;
+			font-weight: 400;
+			margin-bottom: 15px;
+		}
+
+	}
+
+	&__tags {
+		padding-bottom: 	30px;
+		h4 {
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 48px;
+		color: $color_main;
+		}
+
+		&-list {
+
+
+			a {
+				background-color: #e5e5e5;
+				font-family: 'Montserrat', sans-serif;
+				text-transform: uppercase;
+				font-size: 12px;
+				line-height: 	30px;
+				font-weight: 	700;
+				display: 	inline-block;
+				padding: 	0 15px;
+				color: 	#999999;
+				margin-bottom: 	5px;	
+			}
+		}
+	}
+
+}
+.social {
+	padding-left: 15px;
+	color: #cccccc;
+
+	&-cta {
+		padding-left: 10px;
+	}
+	&:hover {
+		text-decoration: none;
+		color: black;
+	}
+}

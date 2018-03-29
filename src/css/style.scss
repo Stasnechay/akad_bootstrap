@@ -1,5 +1,16 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "fonts.scss";
+@import "ionicons.scss";
 @import "variables.scss";
+@import "mixin.scss";
 @import "common.scss";
-@import "header.scss"; 
+@import "layout.scss";
+@import "components.scss";
+@import "header.scss";
+@import "header-common.scss";
+@import "services.scss";
+
+@import "blog.scss";
+@import "contacts.scss";
+@import "footer.scss"; 
+@import "home.scss";
